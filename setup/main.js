@@ -1,3 +1,12 @@
 'use strict'
+// UNIVERSALE SCRIPTS
 
-console.log('Lorem Ipsum')
+// HOME SCRIPTS
+
+// ABOUT SCRIPTS
+
+// CONTACT US SCRIPTS
+
+// MOODS SCRIPTS
+
+// SEASONS SCRIPTS
