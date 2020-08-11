@@ -33,6 +33,36 @@ const pantsObj = [{
 
 // CONTACT US SCRIPTS
 
+
+let contactFormInput = [];
+
+const contactSubmitButton = (e) => {
+  let buttonId = e.target.id;
+  if (buttonId === "submit-button") {
+    const name = document.querySelector("#nameInput").value;
+    const email = document.querySelector("#emailInput").value;
+    let contactFormObject = {username: name, useremail: email};
+    contactFormInput.push(contactFormObject);
+  }
+};
+
+const contactErrorMessage = (name) => {
+  if (name) {
+    document.querySelector("#nameInput" && "#emailInput").innerHTML = ""
+  } else {
+    document.querySelector("#nameInput" && "#emailInput").innerHTML = 
+      `<div style="color: red; margin-bottom: 10px;">
+          <b>Enter your name and email, pretty please</b>
+      </div>`
+  }
+}
+
+const contactSuccessMessage = (name) => {
+  if (name) {
+    document.querySelector()
+  }
+}
+
 // MOODS SCRIPTS
 
 // SEASONS SCRIPTS
