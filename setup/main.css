@@ -1,7 +1,11 @@
-/* UNIVERSAL SYTLES */
+/* UNIVERSAL STYLES */
 
 body {
     background-color: aquamarine;
+}
+/* NAVBAR */
+.navbar-brand {
+    font-family: 'Rye', cursive;
 }
 
 /* HOME PAGE */
