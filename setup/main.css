@@ -1,11 +1,11 @@
 /* UNIVERSAL STYLES */
 
 body {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
 /* NAVBAR */
 .navbar-brand {
-    font-family: 'Rye', cursive;
+  font-family: 'Rye', cursive;
 }
 
 /* HOME PAGE */
@@ -17,3 +17,8 @@ body {
 /* MOODS PAGE */
 
 /* SEASONS PAGE */
+
+/* FOOTER */
+.footer {
+  background-color: aqua;
+}
