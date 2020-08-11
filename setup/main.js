@@ -3,7 +3,7 @@
 
 // UNIVERSAL SCRIPTS
 const pantsObj = [{
-  image: '/images/black-1.png',
+  image: '/images/camo-1.jpeg',
   material: 'Wool',
   size: ['S', 'M', 'L'],
   age: 'Adult'
@@ -15,10 +15,10 @@ const pantsObj = [{
   age: 'Adult'
 },
 {
-  image: '/images/teen-1',
+  image: '/images/winter-1.jpeg',
   material: 'Cotton',
   size: ['S', 'M', 'L'],
-  age: 'Teen'
+  age: 'Adult'
   },
 {
   image: '/images/teen-2.jpeg',
@@ -33,7 +33,7 @@ const pantsObj = [{
   age: 'Kid'
   },
 {
-  image: '/images/camo-1.jpeg',
+  image: '/images/black-1.png',
   material: 'Cotton',
   size: ['S', 'M', 'L'],
   age: 'Adult'
@@ -99,10 +99,10 @@ const pantsObj = [{
   age: 'Adult'
   },
 {
-  image: '/images/winter-1.jpeg',
+  image: '/images/teen-1.jpeg',
   material: 'Down',
   size: ['S', 'M', 'L'],
-  age: 'Adult'
+  age: 'Teen'
   },
 {
   image: '/images/kids-4.jpg',
@@ -129,7 +129,7 @@ const pantsObj = [{
   age: 'Kid'
   },
 {
-  image: '/images/kids-6.jpg',
+  image: '/images/kids-6.jpeg',
   material: 'Cotton',
   size: ['S', 'M', 'L'],
   age: 'Kid'
@@ -141,7 +141,7 @@ const pantsObj = [{
   age: 'Adult'
   },
 {
-  image: '/images/checkered-1.jpg',
+  image: '/images/checkered-1.jpeg',
   material: 'Cotton',
   size: ['S', 'M', 'L'],
   age: 'Adult'
@@ -160,7 +160,35 @@ const pantsObj = [{
   }
 ]
 // HOME SCRIPTS
+const printToDom = (divId, textToPrint) => {
+  const selectedDiv = document.getElementById(divId);
+  selectedDiv.innerHTML = textToPrint;
+};
 
+const buildPantsCards = () => {
+  let domString = '';
+
+  for(let i = 0; i < pantsObj.length; i++){
+      domString += `<div class="home-pants">`
+      domString +=      `<img src= ${pantsObj[i].image} alt="bloomers image"/>`
+      domString +=    `<p> Material: ${pantsObj[i].material}</p>`
+      domString +=    `<p> Size: ${pantsObj[i].size}</p>`
+      domString +=    `<p> Age: ${pantsObj[i].age} </p>`
+      domString += `</div>`
+  }
+
+  printToDom('home-bloomers', domString)
+}
+
+document.getElementById('all').addEventListener('click', buildPantsCards);
+
+
+const init = () => {
+  buildPantsCards();
+}
+
+
+init();
 // ABOUT SCRIPTS
 
 // CONTACT US SCRIPTS

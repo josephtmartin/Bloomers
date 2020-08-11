@@ -10,6 +10,41 @@ body {
 
 /* HOME PAGE */
 
+.display-4 {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 4.5px;
+}
+
+.fabricIMG {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  height: 300px;
+}
+
+.lead {
+  display: flex;
+  justify-content: center;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-bloomers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  width: 280px;
+  padding: 10px;
+}
+
 /* ABOUT US PAGE */
 
 /* CONTACT US PAGE */
