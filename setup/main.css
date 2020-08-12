@@ -23,8 +23,15 @@ body {
     font-size: 75px;
     color: white;
     background: none;
-    border: none;
+    border: 2px solid white;
     cursor: pointer;
+}
+.about .info--container {
+    margin: 30px;
+}
+
+.about .info--container h2 {
+    border-bottom: 2px solid black;
 }
 
 /* CONTACT US PAGE */
@@ -35,5 +42,5 @@ body {
 
 /* FOOTER */
 .footer {
-  background-color: aqua;
+  background-color: white;
 }
