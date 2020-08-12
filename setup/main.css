@@ -22,3 +22,7 @@ body {
 .footer {
   background-color: aqua;
 }
+
+#seasonsJumbotron {
+  background-image: url(https://patternvault.files.wordpress.com/2015/02/mccallspring1933_ski.jpeg);
+}
