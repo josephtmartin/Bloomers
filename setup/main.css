@@ -40,9 +40,20 @@ body {
   justify-content: center;
 }
 
+.home-pants {
+    text-align: center;
+    border-radius: 12px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background-image: url(/images/border.jpeg);
+}
+
 img {
   width: 280px;
+  height: 335px;
   padding: 10px;
+  opacity: .98;
 }
 
 /* ABOUT US PAGE */
