@@ -29,7 +29,7 @@ const pantsObj = [{
 ]
 
 const seasonsObj = [{
-  image: 'https://cdn11.bigcommerce.com/s-ca7b7/images/stencil/2048x2048/products/2361/10818/see_683_RGB__76274.1566763304.jpg?c=2',
+  image: 'seasons-images/winter-1.png',
   season: ['Winter','Spring'],
 },
 {
@@ -73,7 +73,7 @@ const seasonsObj = [{
   season: ['Summer'],
 },
 {
-  image: 'https://beyondshoping.com/wp-content/uploads/2020/05/30/Sanderala-Women-Flannel-Pajama-Bloomers-Pants-2019-Winter-Elastic-Loose-Trousers-Waist-Solid-Pajamas-Bottom-Home-1.jpg',
+  image: 'seasons-images/winter-2.jpg',
   season: ['Winter'],
 },
 {
@@ -81,7 +81,7 @@ const seasonsObj = [{
   season: ['Summer'],
 },
 {
-  image: 'https://images-na.ssl-images-amazon.com/images/I/71Nxty8t-9L._AC_UY350_.jpg',
+  image: 'seasons-images/winter-3.png',
   season: ['Winter'],
 },
 {
@@ -93,15 +93,7 @@ const seasonsObj = [{
   season: ['Spring'],
 },
 {
-  image: 'https://lh3.googleusercontent.com/proxy/9VgYzPT-194FNmlUQBdYq-4gfrFL0rfB90QSU57sin5oOodCRZ49bgcWPtjN1aRw1IfX4mZ9R9tSDnbDJu8fFtbR0GLTRTUrODUrcc5p1i8zbgxhD-JrvitKUKpivScKMvOlbcAfskMKZZcAlNZa7X1TC60y_GctXQ',
-  season: ['Winter'],
-},
-{
-  image: 'https://ae01.alicdn.com/kf/HTB16rb6KFXXXXczXVXXq6xXFXXX5/28-33-2016-men-s-trousers-male-bloomers-personality-harem-pants-male-skinny-pants-singer-costumes.jpg',
-  season: ['Winter'],
-},
-{
-  image: 'https://cdn.shopify.com/s/files/1/0014/4454/4569/products/New-arrive-Japanese-cotton-flaxen-trousers-ankle-banded-pants-men-loose-harem-Chinese-style-large-bloomers.jpg_640x640_df8c04ab-3506-49ae-b6cc-744586cd187c_800x.jpg?v=1571715502',
+  image: 'seasons-images/winter-4.jpg',
   season: ['Winter'],
 },
 ]
@@ -127,28 +119,28 @@ const displayCards = (e) => {
   for (let i = 0; i < seasonsObj.length; i++) {
     for (let j = 0; j < seasonsObj[i].season.length; j++) {
       if (seasonsObj[i].season[j] === buttonClicked) {
-        domString += `<div class="card" style="width: 18rem;">
-                        <img src="${seasonsObj[i].image}" class="card-img-top" alt="...">
+        domString += `<div class="seasonsCardDiv" style="width: 18rem;">
+                        <img src="${seasonsObj[i].image}" class="card-img-top" id="seasonsCardImages" alt="...">
                       </div>`
       }
     }
   }
-  printToDom('cardsSeason', domString);
+  printToDom('seasonsCardContainer', domString);
 }
 
 const seasonsFirstLoad = () => {
   let domString = '';
-  
+
   for (let i = 0; i < seasonsObj.length; i++) {
     for (let j = 0; j < seasonsObj[i].season.length; j++) {
       if (seasonsObj[i].season[j] === 'Winter') {
-        domString += `<div class="card" style="width: 18rem;">
+        domString += `<div class="seasonsCardDiv" style="width: 18rem;">
                         <img src="${seasonsObj[i].image}" class="card-img-top" alt="...">
                       </div>`
       }
     }
   }
-  printToDom('cardsSeason', domString);
+  printToDom('seasonsCardContainer', domString);
 }
 
 const domEvents = () => {
