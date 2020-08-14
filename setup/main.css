@@ -1,10 +1,11 @@
 /* UNIVERSAL STYLES */
 
 body {
-  background-color: aquamarine;
+  background-color: #FCF7F0;
 }
 /* NAVBAR */
 .navbar-brand {
+  font-size: 30px;
   font-family: 'Rye', cursive;
 }
 
@@ -56,17 +57,34 @@ body {
   display: flex;
   justify-content: center;
 }
-.faq--card {
+.faq--container {
 display: flex;
 flex-direction: column;
 justify-content: center;
 text-align: center;
-border-bottom: 2px solid black;
 margin: 20px;
 max-width: 100%;
+}
+.faq--search{
+  display: flex;
+  justify-content: center;
+}
+.search--bar{
+  width: 40%;
+}
+.faq--results ul{
+  list-style: none;
+}
+.faq--results .question {
+  font-size: 20px;
+  font-weight: bold;
+}
+.faq--results .answer {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /* FOOTER */
 .footer {
-  background-color: aqua;
+  background-color: white;
 }
