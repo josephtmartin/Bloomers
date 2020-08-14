@@ -33,43 +33,39 @@ const seasonsObj = [{
   season: ['Winter','Spring'],
 },
 {
-  image: 'https://cdn.shopify.com/s/files/1/0802/6795/products/Khali-MacIntyre-Photography-4749_2048x.jpg?v=1503344735',
+  image: 'seasons-images/Khali-MacIntyre-Photography-4749_2048x.jpg',
   season: ['Summer', 'Spring'],
 },
 {
-  image: 'https://cdn.shopify.com/s/files/1/2550/3694/products/C35A0591_97f28e6a-769f-4d0f-a198-76029ea92b25_500x500.jpg?v=1581098202',
+  image: 'seasons-images/summer-1.jpg',
   season: ['Summer'],
 },
 {
-  image: 'https://imcut.jollychic.com//uploads/jollyimg/imageLibrary/201711/3PW/18/IL201711181814343262.jpg_600x800x80.jpg',
+  image: 'seasons-images/fall-1.jpg',
   season: ['Fall'],
 },
 {
-  image: 'https://images.vogue.it/imgs/galleries/trends/notizie-bellezza/005329/nina-ricci-263920_0x440.jpg',
+  image: 'seasons-images/summer-3.jpg',
   season: ['Summer'],
 },
 {
-  image: 'https://cdn.shopify.com/s/files/1/1833/4459/products/H3955e5c0de384b239b6e520005b62f32t_large.jpg?v=1594052174',
+  image: 'seasons-images/fall-2.jpg',
   season: ['Fall'],
 },
 {
-  image: 'https://i.etsystatic.com/19549035/r/il/b6d1d4/2106874587/il_570xN.2106874587_npf2.jpg',
+  image: 'seasons-images/fall-3.jpg',
   season: ['Fall', 'Spring'],
 },
 {
-  image: 'https://i.etsystatic.com/20451029/r/il/fd0b5f/1918629658/il_570xN.1918629658_9adu.jpg',
+  image: 'seasons-images/fall-4.jpg',
   season: ['Fall'],
 },
 {
-  image: 'https://img.alicdn.com/i2/autumn-and-winter-childrens-clothing-girls-corduroy-trousers-casual-pants-boys-trousers-korean-children-bib-baby-spring/TB1Y1PeHXXXXXXoXpXXXXXXXXXX_!!0-item_pic.jpg',
+  image: 'seasons-images/spring-2.jpg',
   season: ['Spring'],
 },
 {
-  image: 'https://i.pinimg.com/originals/4a/bf/f9/4abff9f78a21712e56389e790579d581.jpg',
-  season: ['Summer'],
-},
-{
-  image: 'https://i.etsystatic.com/8167972/r/il/f5ffb4/1483994194/il_570xN.1483994194_giuw.jpg',
+  image: 'seasons-images/summer-4.jpg',
   season: ['Summer'],
 },
 {
@@ -77,20 +73,16 @@ const seasonsObj = [{
   season: ['Winter'],
 },
 {
-  image: 'https://farm5.static.flickr.com/4017/4654116721_78bab84c32_b.jpg',
-  season: ['Summer'],
+  image: 'seasons-images/spring-3.jpeg',
+  season: ['Spring'],
 },
 {
   image: 'seasons-images/winter-3.png',
   season: ['Winter'],
 },
 {
-  image: 'https://cdn.shopify.com/s/files/1/0035/7600/4654/products/21_5ff03a89-1378-4021-8839-edc1ab8eefd2_800x.jpg?v=1581014286',
+  image: 'seasons-images/fall-1.jpg',
   season: ['Fall'],
-},
-{
-  image: 'https://image.made-in-china.com/2f0j00LNPEHTaGVgqw/P1294-Ladies-Fashion-Wool-Bloomers-Bloused-Knickers-Loose-Dance-Sport-Pants-Bloomers-Harem-Casual-Trousers-Wide-Legged-Pocket-Knitted-Pants.jpg',
-  season: ['Spring'],
 },
 {
   image: 'seasons-images/winter-4.jpg',
@@ -119,7 +111,7 @@ const displayCards = (e) => {
   for (let i = 0; i < seasonsObj.length; i++) {
     for (let j = 0; j < seasonsObj[i].season.length; j++) {
       if (seasonsObj[i].season[j] === buttonClicked) {
-        domString += `<div class="seasonsCardDiv" style="width: 18rem;">
+        domString += `<div class="seasons-card-div" style="width: 18rem;">
                         <img src="${seasonsObj[i].image}" class="card-img-top" id="seasonsCardImages" alt="...">
                       </div>`
       }
@@ -134,7 +126,7 @@ const seasonsFirstLoad = () => {
   for (let i = 0; i < seasonsObj.length; i++) {
     for (let j = 0; j < seasonsObj[i].season.length; j++) {
       if (seasonsObj[i].season[j] === 'Winter') {
-        domString += `<div class="seasonsCardDiv" style="width: 18rem;">
+        domString += `<div class="seasons-card-div" style="width: 18rem;">
                         <img src="${seasonsObj[i].image}" class="card-img-top" alt="...">
                       </div>`
       }
