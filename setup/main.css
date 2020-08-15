@@ -112,10 +112,12 @@ fieldset {
   font-family: 'Roboto', sans-serif;
   }
 
-  #kiltScots {
-      width:5%;
-      height: 5%;
-  }
+    
+#moodyBloom {
+  display: flex;
+  justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
 /* SEASONS PAGE */
 
 /* FOOTER */
