@@ -10,10 +10,15 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.css" />
-    <title>Bloomers || Moods</title>
+    <title>Bloomers || About</title>
   </head>
-  <body>
+  <body id="faqPage">
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Bloomers</a>
       <button
@@ -35,8 +40,8 @@
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="moods.html">Moods <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="moods.html">Moods</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="seasons.html">Seasons</a>
@@ -44,11 +49,35 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="faq.html">FAQ <span class="sr-only">(current)</span></a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <footer class="footer d-flex justify-content-center pt-2 fixed-bottom">
+    <!-- FAQ -->
+    <div class="faq">
+      <div class="faq--image-container">
+        <img
+          class="faq--image"
+          src="https://i.postimg.cc/4dj86KsH/faq-image.png"
+          alt="picture of FAQ"
+        />
+      </div>
+      <div class="faq--search">
+        <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          class="search--bar"
+          placeholder="Search for FAQ's"
+        />
+      </div>
+      <ul class="faq--container" id="faq"></ul>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer d-flex justify-content-center pt-2 sticky-bottom">
       <p>Copyright &copy 2020, All Rights Reserved</p>
     </footer>
 
