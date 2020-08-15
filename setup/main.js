@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // UNIVERSAL SCRIPTS
 const pantsObj = [
@@ -190,6 +190,7 @@ const printToDomHome = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
   selectedDiv.innerHTML = textToPrint;
 };
+
 
 const buildPantsCards = () => {
   let domString = "";
