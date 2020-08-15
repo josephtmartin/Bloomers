@@ -117,14 +117,17 @@ const faqObj = [
 const handleKeyup = (e) => {
   const searchString = e.target.value.toLowerCase();
   const searchFaq = [];
-  
+
   for (let i = 0; i < faqObj.length; i++) {
-    if (faqObj[i].question.toLowerCase().includes(searchString) || faqObj[i].answer.toLowerCase().includes(searchString)) {
+    if (
+      faqObj[i].question.toLowerCase().includes(searchString) ||
+      faqObj[i].answer.toLowerCase().includes(searchString)
+    ) {
       searchFaq.push(faqObj[i]);
     }
   }
   createfaq(searchFaq);
-}
+};
 
 const createfaq = (doggoButts) => {
   let domString = '';
@@ -144,7 +147,6 @@ const createfaq = (doggoButts) => {
 
 const init = () => {
   buttonEvents();
-
 };
 
 init();

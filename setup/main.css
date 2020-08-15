@@ -1,7 +1,7 @@
 /* UNIVERSAL STYLES */
 
 body {
-  background-color: #FCF7F0;
+  background-color: #fcf7f0;
 }
 /* NAVBAR */
 .navbar-brand {
@@ -16,35 +16,34 @@ body {
   height: auto;
 }
 .about--container .btn {
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    width: 23%;
-    height: 15%;
-    font-size: 75px;
-    color: white;
-    background: none;
-    border: 2px solid white;
-    cursor: pointer;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  width: 23%;
+  height: 15%;
+  font-size: 75px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
 }
 .about--card .info--container {
-    margin: 30px;
+  margin: 30px;
 }
 
 .about--card .info--container h2 {
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid black;
-    font-family: 'Rye', cursive;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  font-family: 'Rye', cursive;
 }
 .about--card .info--container p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
 }
-
 
 /* CONTACT US PAGE */
 
@@ -53,26 +52,27 @@ body {
 /* SEASONS PAGE */
 
 /* FAQ PAGE */
-.faq--image-container, .faq--image {
+.faq--image-container,
+.faq--image {
   display: flex;
   justify-content: center;
 }
 .faq--container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-margin: 20px;
-max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  max-width: 100%;
 }
-.faq--search{
+.faq--search {
   display: flex;
   justify-content: center;
 }
-.search--bar{
+.search--bar {
   width: 40%;
 }
-.faq--results ul{
+.faq--results ul {
   list-style: none;
 }
 .faq--results .question {
