@@ -326,7 +326,7 @@ const aboutInfoBuilder = (e) => {
   joePrintToDom('about', domString);
 };
 
-const buttonEvents = () => {
+const buttonEventsJoe = () => {
   if (document.getElementById('aboutPage')) {
     document.querySelector('#aboutUsBtn').addEventListener('click', aboutInfoBuilder);
   }
@@ -493,7 +493,7 @@ const createfaq = (doggoButts) => {
 // FILTER FUNCTION
 
 const init = () => {
-  buttonEvents();
+  buttonEventsJoe();
 };
 
 init();
