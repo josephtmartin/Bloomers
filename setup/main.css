@@ -1,11 +1,5 @@
 /* UNIVERSAL STYLES */
 
-<<<<<<< HEAD
-body {
-  background-color: #fcf7f0;
-}
-=======
->>>>>>> master
 /* NAVBAR */
 .navbar-brand {
   font-family: 'Rye', cursive;
@@ -115,8 +109,7 @@ fieldset {
 }
 
 #moodJumbo p {
-  font-family: 'Roboto';
-  font-size: x-large;
+  font-family: 'Roboto', sans-serif;
   }
 
   #kiltScots {
@@ -128,11 +121,4 @@ fieldset {
 /* FOOTER */
 .footer {
   background-color: white;
-<<<<<<< HEAD
-=======
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
->>>>>>> master
 }

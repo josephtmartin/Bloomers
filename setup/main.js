@@ -110,10 +110,6 @@ submitButtonClick();
 
 // MOODS SCRIPTS
 
-const printToDom = (divId, textToPrint) => {
-  const selectedDiv = document.getElementById(divId);
-  selectedDiv.innerHTML = textToPrint;
-}
 const moodArray = [
   { 
     moodName: `Hipster of NYC`,
@@ -158,7 +154,7 @@ const moodBuilder = () => {
                  </div>`
 }   
 
-printToDom('moodyBloom', domString)
+printToDom('#moodyBloom', domString)
 
 }
 
@@ -168,16 +164,14 @@ const handleButtonClick = (e) => {
    
 }
 
-const buttonEvents = () => {
- if (document.getElementById('moodsPage')) {
+const moodyEvents = () => {
+ if (document.querySelector('#moodsPage')) {
     document.querySelector('#moodyBtn').addEventListener('click', handleButtonClick);
 }}
 
-  
-    
 
 const init = () => {
-  buttonEvents();
+  moodyEvents();
   moodBuilder(moodArray);
  
 }
