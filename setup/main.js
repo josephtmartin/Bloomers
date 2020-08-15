@@ -55,10 +55,11 @@ const aboutInfoBuilder = (e) => {
 
 const buttonEvents = () => {
   if (document.getElementById('aboutPage')) {
-  document.querySelector('#aboutUsBtn').addEventListener('click', aboutInfoBuilder);
+    document.querySelector('#aboutUsBtn').addEventListener('click', aboutInfoBuilder);
   }
   if (document.getElementById('faqPage')) {
-    createfaq();
+    createfaq(faqObj);
+    document.querySelector('#searchBar').addEventListener('keyup', handleKeyup);
   }
 };
 
@@ -113,14 +114,26 @@ const faqObj = [
   },
 ];
 
-const createfaq = () => {
+const handleKeyup = (e) => {
+  const searchString = e.target.value.toLowerCase();
+  const searchFaq = [];
+  
+  for (let i = 0; i < faqObj.length; i++) {
+    if (faqObj[i].question.toLowerCase().includes(searchString) || faqObj[i].answer.toLowerCase().includes(searchString)) {
+      searchFaq.push(faqObj[i]);
+    }
+  }
+  createfaq(searchFaq);
+}
+
+const createfaq = (doggoButts) => {
   let domString = '';
 
-  for (let i = 0; i < faqObj.length; i++) {
+  for (let i = 0; i < doggoButts.length; i++) {
     domString += `<div class="faq--results">
                     <ul id"myUL>
-                      <li class="question">Q: ${faqObj[i].question}</li>
-                      <li class="answer">A: ${faqObj[i].answer}</li>
+                      <li class="question">Q: ${doggoButts[i].question}</li>
+                      <li class="answer">A: ${doggoButts[i].answer}</li>
                     </ul>
                   </div>`;
   }
@@ -129,9 +142,9 @@ const createfaq = () => {
 
 // FILTER FUNCTION
 
-
 const init = () => {
   buttonEvents();
+
 };
 
 init();
