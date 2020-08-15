@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="main.css" />
     <title>Bloomers || Contact Us</title>
   </head>
-  <body>
+  <body id="contactUsPage">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Bloomers</a>
       <button
@@ -52,13 +52,21 @@
               >Contact Us <span class="sr-only">(current)</span></a
             >
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
         </ul>
       </div>
     </nav>
     <div id="page-content">
+      <div class="picture-loop">
+          <p>Need help with an existing order you've placed? Contact us at <a href="#">info@bloomersinc.com</a>.</p>
+          <p>Our mailing address is <b>1234 Elm St, Nashville TN 37214</b> – this is also the location for order pick-ups, but please note, we do not have a walk-in location at this time for being able to browse our selection, so please place orders online, at least 1 day before arriving, for anything you’d like to pick up during our normal weekday hours Monday-Friday between <b>9 AM and 6 PM Central Time</b>. We are closed on weekends but can occasionally accommodate a later weekday pickup if needed.</p>
+          <p>If you would like to pay by check, please call or email so that we may get you final pricing on your order prior to mailing in payment so that we can ensure you have the correct order total!</p>
+      </div>
       <div class="container">
           <form action="" id="contact">
-              <h2>**Bloomers**</h2>
+              <h2>Bloomers</h2>
               <h4>Contact Us</h4>
               <fieldset>
                   <input type="text" id="nameInput" placeholder="Your name">
@@ -67,36 +75,37 @@
                   <input type="email" id="emailInput" placeholder="Your email address">
               </fieldset>
               <fieldset>
-                  <div class="btn-group">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-                        Favorite type of bloomer?
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-lg-right">
-                        <button class="dropdown-item" type="button">Corduroy</button>
-                        <button class="dropdown-item" type="button">Terrycloth</button>
-                        <button class="dropdown-item" type="button">Silk</button>
-                      </div>
-                    </div>
+                <h3>Favorite bloomer material?</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Corduroy" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Corduroy
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Cotton">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Cotton
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Silk">
+                  <label class="form-check-label" for="exampleRadios3">
+                    Silk
+                  </label>
+                </div>
               </fieldset>
               <fieldset>
-                  <button type="button" id="submit-button" class="btn btn-secondary btn-lg btn-block">Submit</button>
+                  <button type="button reset" id="submit-button" class="btn btn-secondary btn-lg btn-block">Submit</button>
               </fieldset>
           </form>
       </div>
-      <div class="picture-loop">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTnPzHswb4CosV3ggj-rdRRg65-p5E42uaGaw&usqp=CAU" alt="lady in bloomers">
-          <p>Bloomers Inc</p>
-          <p>1234 Elm St.</p>
-          <p> Nashville TN 37214</p>
-          <div class="push"></div>
-          
-      </div>
-  </div>
-
-    <footer class="footer d-flex justify-content-center pt-2 fixed-bottom">
-      <p>Copyright &copy 2020, All Rights Reserved</p>
-    </footer>
-
+    </div>
+    <div id="contact-message"></div>
+  <footer class="footer d-flex justify-content-center pt-2 sticky-bottom">
+    <p>Copyright &copy 2020, All Rights Reserved</p>
+  </footer>
+    <script src="main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -112,6 +121,5 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
   </body>
 </html>
