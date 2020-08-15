@@ -1,157 +1,113 @@
 /* UNIVERSAL STYLES */
 
-body {
-  background-color: #fcf7f0;
-  font-family: 'Roboto', sans-serif;
-}
 /* NAVBAR */
 .navbar-brand {
-  font-size: 30px;
   font-family: 'Rye', cursive;
 }
 
 /* HOME PAGE */
 
 /* ABOUT US PAGE */
-.about--image {
-  height: auto;
-}
-.about--container .btn {
-  position: absolute;
-  top: 75%;
-  left: 25%;
-  width: 50%;
-  height: 20%;
-  font-size: 75px;
-  color: white;
-  background: none;
-  border: 2px solid white;
-  cursor: pointer;
-}
-.about--card .info--container {
-  margin: 30px;
-}
-
-.about--card .info--container h2 {
-  display: flex;
-  justify-content: center;
-  border-bottom: 2px solid black;
-  font-family: 'Rye', cursive;
-}
-.about--card .info--container p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 20px;
-}
 
 /* CONTACT US PAGE */
+#contactUsPage {
+    background-color: #fcf7f0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+#page-content {
+    background-color: #fcf7f0;
+    margin-top: 2%;
+}
+
+#page-content p {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container {
+    background-color: #fcf7f0;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 5px auto;
+    position: relative;
+}
+
+.picture-loop {
+    background-color: #fcf7f0;
+    padding: 5px auto;
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container h2 {
+    font-family: 'Rye', cursive;
+}
+
+#contact {
+    margin-top: 25px;
+    background: #fcf7f0;
+}
+
+#contact h2 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#contact h4 {
+    text-align: center;
+}
+
+fieldset {
+    margin: 3% auto;
+    min-width: 80%;
+    padding: 0;
+    width: 80%;
+}
+
+#contact input {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+.btn-group {
+    width: 100%;
+}
+
+#submit-button {
+    margin-bottom: 15px;
+}
+
+#contact-message {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#thanks {
+    height: 30%;
+    width: 45%;
+    background-color: antiquewhite;
+}
+
+#thanks-header {
+    font-family: 'Rye', cursive;
+    font-size: 2em;
+    background-color: blanchedalmond;
+}
+
 
 /* MOODS PAGE */
 
 /* SEASONS PAGE */
 
-/* FAQ PAGE */
-.faq--image-container,
-.faq--image {
-  display: flex;
-  justify-content: center;
-}
-.faq--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: 20px;
-  padding: 0;
-  max-width: 100%;
-}
-.faq--search {
-  display: flex;
-  justify-content: center;
-}
-.search--bar {
-  width: 40%;
-}
-.faq--results ul {
-  list-style: none;
-  padding: 0;
-}
-.faq--results .question {
-  font-size: 20px;
-  font-weight: bold;
-}
-.faq--results .answer {
-  font-size: 15px;
-  font-weight: 600;
-}
-
 /* FOOTER */
 .footer {
   background-color: white;
-}
-
-/* MEDIA QUERIES */
-/* ABOUT PAGE */
-@media screen and (max-width: 1440px) {
-  .about--container .btn {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    width: 50%;
-    height: 20%;
-    font-size: 75px;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar,
-  .about--container,
-  .about--card,
-  .footer {
-    width: 100%;
-  }
-  .about--container .btn {
-    position: absolute;
-    top: 90%;
-    left: 25%;
-    width: 50%;
-    height: 20%;
-    font-size: 75px;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .navbar,
-  .about--container,
-  .about--card,
-  .footer {
-    width: 100%;
-  }
-  .about--container .btn {
-    position: absolute;
-    top: 65%;
-    left: 25%;
-    width: 10%;
-    height: 10%;
-    font-size: 30px;
-    width: 50%;
-  }
-}
-/* FAQ PAGE */
-@media screen and (max-width: 768px) {
-  .navbar,
-  .faq--image-container .faq--image,
-  .faq--container .faq--results,
-  .footer {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 425px) {
-  .navbar,
-  .faq--image-container .faq--image,
-  .faq--container .faq--results,
-  .footer {
-    width: 100%;
-  }
 }
