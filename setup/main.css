@@ -58,11 +58,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-img {
+/* img {
   width: 280px;
   height: 335px;
   padding: 10px;
-}
+} */
 
 .bloom {
   display: flex;

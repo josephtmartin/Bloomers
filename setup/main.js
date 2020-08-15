@@ -55,10 +55,6 @@ const seasonsObj = [{
   season: ['Winter'],
 },
 {
-  image: 'seasons-images/fall-1.jpg',
-  season: ['Fall'],
-},
-{
   image: 'seasons-images/winter-4.jpg',
   season: ['Winter'],
 },
@@ -85,6 +81,26 @@ const seasonsObj = [{
 {
   image: 'seasons-images/spring-5.jpg',
   season: ['Spring', 'Fall'],
+},
+{
+  image: 'seasons-images/winter-6.jpg',
+  season: ['Winter', 'Fall'],
+},
+{
+  image: 'seasons-images/spring-6.jpg',
+  season: ['Spring', 'Summer'],
+},
+{
+  image: 'seasons-images/summer-8.jpg',
+  season: ['Summer'],
+},
+{
+  image: 'seasons-images/summer-9.jpg',
+  season: ['Summer', 'Fall'],
+},
+{
+  image: 'seasons-images/fall-7.jpg',
+  season: ['Fall'],
 },
 ]
 
@@ -523,9 +539,9 @@ const domEvents = () => {
   }
 }
 
-const init = () => {
+const seasonsInit = () => {
   domEvents();
   seasonsFirstLoad();
 }
 
-init();
+seasonsInit();
