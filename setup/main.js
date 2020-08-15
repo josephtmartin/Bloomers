@@ -118,6 +118,7 @@ const displayCards = (e) => {
     }
   }
   printToDom('seasonsCardContainer', domString);
+  fadeSeasonsCards();
 }
 
 const seasonsFirstLoad = () => {
@@ -135,11 +136,12 @@ const seasonsFirstLoad = () => {
     }
   }
   printToDom('seasonsCardContainer', domString);
+  fadeSeasonsCards();
 }
 }
 
 const fadeSeasonsCards = () =>  {
-  $(#seasonsCardContainer).fadeIn(2000)
+  $('.seasons-card-div').fadeIn(3000)
 }
 
 const domEvents = () => {
