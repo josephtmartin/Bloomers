@@ -268,6 +268,20 @@ const buttonEvents = () => {
     document.getElementById("teen").addEventListener("click", teenCards);
     document.getElementById("kids").addEventListener("click", kidCards);
   }
+  if (document.getElementById('homePage')) {
+    $(document).ready(function () {
+      $('#bloom').hide().fadeIn(7000);
+      $('#bloom').click(function () {
+        $('#bloom').fadeOut(500).fadeIn(7000);
+      });
+    });
+    $(document).ready(function () {
+      $('#bottomCards').hide();
+      $('#bloom').click(function () {
+        $('#bottomCards').slideDown(1000);
+      });
+    });
+  }
 };
 
 const homeInit = () => {
@@ -276,19 +290,20 @@ const homeInit = () => {
 
 homeInit();
 
-$(document).ready(function () {
-  $("#bloom").hide().fadeIn(7000);
-  $("#bloom").click(function () {
-    $("#bloom").fadeOut(500).fadeIn(7000);
-  });
-});
 
-$(document).ready(function () {
-  $("#bottomCards").hide();
-  $("#bloom").click(function () {
-    $("#bottomCards").slideDown(1000);
-  });
-});
+// $(document).ready(function () {
+//   $("#bloom").hide().fadeIn(7000);
+//   $("#bloom").click(function () {
+//     $("#bloom").fadeOut(500).fadeIn(7000);
+//   });
+// });
+
+// $(document).ready(function () {
+//   $("#bottomCards").hide();
+//   $("#bloom").click(function () {
+//     $("#bottomCards").slideDown(1000);
+//   });
+// });
 
 // ABOUT SCRIPTS
 
