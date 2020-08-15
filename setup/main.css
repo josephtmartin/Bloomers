@@ -3,7 +3,6 @@
 /* NAVBAR */
 .navbar-brand {
   font-family: 'Rye', cursive;
-  background-color: #fcf7f0;
 }
 
 /* HOME PAGE */
@@ -13,6 +12,7 @@
 /* CONTACT US PAGE */
 #contactUsPage {
     background-color: #fcf7f0;
+    font-family: 'Roboto', sans-serif;;
 }
 
 #page-content {
@@ -110,7 +110,7 @@ fieldset {
 
 /* FOOTER */
 .footer {
-  background-color: #fcf7f0;
+  background-color: white;
   position: absolute;
   bottom: 0;
   width: 100%;
