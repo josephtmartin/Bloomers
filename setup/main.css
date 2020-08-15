@@ -1,8 +1,13 @@
 /* UNIVERSAL STYLES */
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   background-color: #fcf7f0;
 }
+
 /* NAVBAR */
 .navbar-brand {
   font-family: 'Rye', cursive;
@@ -10,7 +15,7 @@ body {
 
 /* HOME PAGE */
 
-.display-4 {
+#homePage .display-4 {
   display: flex;
   justify-content: center;
   letter-spacing: 4.5px;
@@ -57,13 +62,6 @@ body {
   width: 280px;
   height: 335px;
   padding: 10px;
-}
-
-.bloom {
-  display: flex;
-  justify-content: center;
-  letter-spacing: 2px;
-  font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -138,9 +136,10 @@ body {
 }
 
 /* CONTACT US PAGE */
+
 #contactUsPage {
-  background-color: #fcf7f0;
-  font-family: 'Roboto', sans-serif;
+    background-color: #fcf7f0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #page-content {
@@ -234,8 +233,45 @@ fieldset {
 
 /* SEASONS PAGE */
 
+#seasonsPage {
+  font-family: 'Roboto', sans-serif;
+}
+
+#seasonsJumbotron {
+  background-image: url(seasons-images/jumbo-background.jpg);
+  background-color: #f8f9fa;
+  font-family: 'Rye';
+  padding: 5% 0 5% 3%;
+}
+
+#seasonsCardContainer {
+  padding: 4%;
+}
+
+.seasons-card-div {
+  margin-top: 1%;
+}
+
+#seasonsCardImages {
+  height: 30vw;
+  object-fit: cover;
+}
+
+#Winter, 
+#Spring,
+#Summer,
+#Fall {
+  margin-right: 1%;
+  margin-left: 1%;
+  width: 5%;
+}
+
+#seasonsButtonDiv {
+  margin-top: 3%;
+}
+
 /* FAQ PAGE */
-.faq--image-container,
+.faq--image-container, 
 .faq--image {
   display: flex;
   justify-content: center;
@@ -337,4 +373,12 @@ fieldset {
   .footer {
     width: 100%;
   }
+}
+/* BLOOM STYLING */
+
+.bloom {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
 }
