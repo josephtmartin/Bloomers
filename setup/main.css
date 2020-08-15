@@ -2,6 +2,7 @@
 
 body {
   background-color: #fcf7f0;
+  font-family: 'Roboto', sans-serif;
 }
 /* NAVBAR */
 .navbar-brand {
@@ -17,10 +18,10 @@ body {
 }
 .about--container .btn {
   position: absolute;
-  top: 60%;
-  left: 40%;
-  width: 23%;
-  height: 15%;
+  top: 75%;
+  left: 25%;
+  width: 50%;
+  height: 20%;
   font-size: 75px;
   color: white;
   background: none;
@@ -63,6 +64,7 @@ body {
   justify-content: center;
   text-align: center;
   margin: 20px;
+  padding: 0;
   max-width: 100%;
 }
 .faq--search {
@@ -74,6 +76,7 @@ body {
 }
 .faq--results ul {
   list-style: none;
+  padding: 0;
 }
 .faq--results .question {
   font-size: 20px;
@@ -87,4 +90,68 @@ body {
 /* FOOTER */
 .footer {
   background-color: white;
+}
+
+/* MEDIA QUERIES */
+/* ABOUT PAGE */
+@media screen and (max-width: 1440px) {
+  .about--container .btn {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 50%;
+    height: 20%;
+    font-size: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar,
+  .about--container,
+  .about--card,
+  .footer {
+    width: 100%;
+  }
+  .about--container .btn {
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    width: 50%;
+    height: 20%;
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .navbar,
+  .about--container,
+  .about--card,
+  .footer {
+    width: 100%;
+  }
+  .about--container .btn {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    width: 10%;
+    height: 10%;
+    font-size: 30px;
+    width: 50%;
+  }
+}
+/* FAQ PAGE */
+@media screen and (max-width: 768px) {
+  .navbar,
+  .faq--image-container .faq--image,
+  .faq--container .faq--results,
+  .footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .navbar,
+  .faq--image-container .faq--image,
+  .faq--container .faq--results,
+  .footer {
+    width: 100%;
+  }
 }
