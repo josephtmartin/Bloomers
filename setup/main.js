@@ -431,11 +431,11 @@ const moodArray = [
 const printAll = () => {
   let domString = '';
   for (let i=0; i < moodArray.length; i++) {
-    domString += `<div class="card my-2" style="width: 18rem;" id="${i}">  
-                   <img src=${moodArray[i].imageURL} class="card-img-top" 
+    domString += `<div class="mood--card" style="width: 18rem;" id="${i}">  
+                   <img src=${moodArray[i].imageURL} class="mood--image" 
                    alt="This is an image of ${moodArray[i].moodName}">
                   <div class="card-body">
-                  <p class="card-text">${moodArray[i].moodName}</p>
+                  <p class="card-mood">${moodArray[i].moodName}</p>
                   <p class="mood-text">${moodArray[i].description}</p>
                   </div>
                   </div>`
@@ -447,11 +447,11 @@ const printAll = () => {
 const randomMoodGenerator = () => {
   let domString = '';
     const randomMood = moodArray[Math.floor(Math.random()* moodArray.length)];
-        domString += `<div class="card my-2" style="width: 18rem;" id=${moodyBloom}>  
-                  <img src=${randomMood.imageURL} class="card-img-top" 
+        domString += `<div class="mood--card" style="width: 18rem;" id=${moodyBloom}>  
+                  <img src=${randomMood.imageURL} class="mood--image" 
                   alt="This is an image of ${randomMood.imageURL}">
                  <div class="card-body">
-                 <p class="card-text">${randomMood.moodName}</p>
+                 <p class="card-mood">${randomMood.moodName}</p>
                  <p class="mood-text">${randomMood.description}</p>
                  </div>
                  </div>`
@@ -468,12 +468,12 @@ const moodyEvents = () => {
 }}
 
 
-const init = () => {
+const moodInit = () => {
   moodyEvents();
   
 }
 
-init();
+moodInit();
 
 
 // SEASONS SCRIPTS

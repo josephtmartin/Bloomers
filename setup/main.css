@@ -239,10 +239,19 @@ fieldset {
   }
 
     
-#moodyBloom {
-  display: flex;
-  justify-content: center;
-    font-family: 'Roboto', sans-serif;
+.mood--image {
+  width: 280px;
+  height: 335px;
+  padding: 10px;
+}
+ .card-mood {
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   text-align: center;
+ }
+.mood-text {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
 /* SEASONS PAGE */
 
