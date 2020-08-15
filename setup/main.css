@@ -1,7 +1,7 @@
 /* UNIVERSAL STYLES */
 
 body {
-  background-color: aquamarine;
+  background-color: #fcf7f0;
 }
 /* NAVBAR */
 .navbar-brand {
@@ -15,10 +15,22 @@ body {
 /* CONTACT US PAGE */
 
 /* MOODS PAGE */
+#moodJumbo h1  {
+  font-family: 'Rye', cursive;
+}
 
+#moodJumbo p {
+  font-family: 'Roboto';
+  font-size: x-large;
+  }
+
+  #kiltScots {
+      width:5%;
+      height: 5%;
+  }
 /* SEASONS PAGE */
 
 /* FOOTER */
 .footer {
-  background-color: aqua;
+  background-color: white;
 }
