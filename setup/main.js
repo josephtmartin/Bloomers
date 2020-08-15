@@ -121,6 +121,8 @@ const displayCards = (e) => {
 }
 
 const seasonsFirstLoad = () => {
+
+  if (document.getElementById('seasonsPage')) {
   let domString = '';
 
   for (let i = 0; i < seasonsObj.length; i++) {
@@ -134,12 +136,19 @@ const seasonsFirstLoad = () => {
   }
   printToDom('seasonsCardContainer', domString);
 }
+}
+
+const fadeSeasonsCards = () =>  {
+  $(#seasonsCardContainer).fadeIn(2000)
+}
 
 const domEvents = () => {
+  if(document.getElementById('seasonsPage')) {
   document.querySelector('#Winter').addEventListener('click', displayCards);
   document.querySelector('#Summer').addEventListener('click', displayCards);
   document.querySelector('#Spring').addEventListener('click', displayCards);
   document.querySelector('#Fall').addEventListener('click', displayCards);
+  }
 }
 
 const init = () => {
