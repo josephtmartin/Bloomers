@@ -186,7 +186,7 @@ const pantsObj = [
   },
 ];
 // HOME SCRIPTS
-const printToDom = (divId, textToPrint) => {
+const printToDomHome = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
   selectedDiv.innerHTML = textToPrint;
 };
@@ -204,7 +204,7 @@ const buildPantsCards = () => {
     domString += `</div>`;
   }
 
-  printToDom("home-bloomers", domString);
+  printToDomHome("home-bloomers", domString);
 };
 const adultCards = () => {
   let domString = "";
@@ -220,7 +220,7 @@ const adultCards = () => {
       domString += `</div>`;
     }
   }
-  printToDom("home-bloomers", domString);
+  printToDomHome("home-bloomers", domString);
 };
 
 const teenCards = () => {
@@ -237,7 +237,7 @@ const teenCards = () => {
       domString += `</div>`;
     }
   }
-  printToDom("home-bloomers", domString);
+  printToDomHome("home-bloomers", domString);
 };
 
 const kidCards = () => {
@@ -254,7 +254,7 @@ const kidCards = () => {
       domString += `</div>`;
     }
   }
-  printToDom("home-bloomers", domString);
+  printToDomHome("home-bloomers", domString);
 };
 
 const buttonEvents = () => {
