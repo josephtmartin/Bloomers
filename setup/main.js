@@ -1,6 +1,109 @@
 'use strict';
 
 // UNIVERSAL SCRIPTS
+
+const seasonsObj = [{
+  image: 'seasons-images/winter-1.png',
+  season: ['Winter','Spring'],
+},
+{
+  image: 'seasons-images/Khali-MacIntyre-Photography-4749_2048x.jpg',
+  season: ['Summer', 'Spring'],
+},
+{
+  image: 'seasons-images/summer-1.jpg',
+  season: ['Summer'],
+},
+{
+  image: 'seasons-images/fall-1.jpg',
+  season: ['Fall'],
+},
+{
+  image: 'seasons-images/summer-3.jpg',
+  season: ['Summer'],
+},
+{
+  image: 'seasons-images/fall-2.jpg',
+  season: ['Fall'],
+},
+{
+  image: 'seasons-images/fall-3.jpg',
+  season: ['Fall', 'Spring'],
+},
+{
+  image: 'seasons-images/fall-4.jpg',
+  season: ['Fall'],
+},
+{
+  image: 'seasons-images/spring-2.jpg',
+  season: ['Spring'],
+},
+{
+  image: 'seasons-images/summer-4.jpg',
+  season: ['Summer'],
+},
+{
+  image: 'seasons-images/winter-2.jpg',
+  season: ['Winter'],
+},
+{
+  image: 'seasons-images/spring-3.jpeg',
+  season: ['Spring'],
+},
+{
+  image: 'seasons-images/winter-3.png',
+  season: ['Winter'],
+},
+{
+  image: 'seasons-images/winter-4.jpg',
+  season: ['Winter'],
+},
+{
+  image: 'seasons-images/winter-5.jpg',
+  season: ['Winter', 'Fall', 'Spring'],
+},
+{
+  image: 'seasons-images/summer-5.jpg',
+  season: ['Summer'],
+},
+{
+  image: 'seasons-images/summer-6.jpg',
+  season: ['Summer', 'Spring'],
+},
+{
+  image: 'seasons-images/summer-7.jpeg',
+  season: ['Summer'],
+},
+{
+  image: 'seasons-images/spring-4.jpg',
+  season: ['Spring'],
+},
+{
+  image: 'seasons-images/spring-5.jpg',
+  season: ['Spring', 'Fall'],
+},
+{
+  image: 'seasons-images/winter-6.jpg',
+  season: ['Winter', 'Fall'],
+},
+{
+  image: 'seasons-images/spring-6.jpg',
+  season: ['Spring', 'Summer'],
+},
+{
+  image: 'seasons-images/summer-8.jpg',
+  season: ['Summer'],
+},
+{
+  image: 'seasons-images/summer-9.jpg',
+  season: ['Summer', 'Fall'],
+},
+{
+  image: 'seasons-images/fall-7.jpg',
+  season: ['Fall'],
+},
+]
+
 const pantsObj = [
   {
     image: '/images/camo-1.jpeg',
@@ -185,6 +288,7 @@ const pantsObj = [
     age: 'Adult',
   },
 ];
+
 // HOME SCRIPTS
 const printToDomHome = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
@@ -477,6 +581,61 @@ moodInit();
 
 
 // SEASONS SCRIPTS
+const displayCards = (e) => {
+  const buttonClicked = e.target.id;
+  let domString = '';
+
+  for (let i = 0; i < seasonsObj.length; i++) {
+    for (let j = 0; j < seasonsObj[i].season.length; j++) {
+      if (seasonsObj[i].season[j] === buttonClicked) {
+        domString += `<div class="seasons-card-div" style="width: 18rem;">
+                        <img src="${seasonsObj[i].image}" class="card-img-top" id="seasonsCardImages" alt="...">
+                      </div>`
+      }
+    }
+  }
+  printToDom('#seasonsCardContainer', domString);
+  fadeSeasonsCards();
+}
+
+const seasonsFirstLoad = () => {
+
+  if (document.getElementById('seasonsPage')) {
+  let domString = '';
+
+  for (let i = 0; i < seasonsObj.length; i++) {
+    for (let j = 0; j < seasonsObj[i].season.length; j++) {
+      if (seasonsObj[i].season[j] === 'Spring') {
+        domString += `<div class="seasons-card-div" style="width: 18rem;">
+                        <img src="${seasonsObj[i].image}" class="card-img-top" id="seasonsCardImages" alt="...">
+                      </div>`
+      }
+    }
+  }
+  printToDom('#seasonsCardContainer', domString);
+  fadeSeasonsCards();
+}
+}
+
+const fadeSeasonsCards = () =>  {
+  $('.seasons-card-div').hide().fadeIn(700)
+}
+
+const domEvents = () => {
+  if(document.getElementById('seasonsPage')) {
+  document.querySelector('#Winter').addEventListener('click', displayCards);
+  document.querySelector('#Summer').addEventListener('click', displayCards);
+  document.querySelector('#Spring').addEventListener('click', displayCards);
+  document.querySelector('#Fall').addEventListener('click', displayCards);
+  }
+}
+
+const seasonsInit = () => {
+  domEvents();
+  seasonsFirstLoad();
+}
+
+seasonsInit();
 
 // FAQ SCRIPTS
 const faqObj = [
