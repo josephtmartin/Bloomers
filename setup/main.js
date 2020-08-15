@@ -196,7 +196,7 @@ const buildPantsCards = () => {
 
   for (let i = 0; i < pantsObj.length; i++) {
     domString += `<div class="home-pants">`;
-    domString += `<img src= ${pantsObj[i].image} alt="bloomers image"/>`;
+    domString += `<img class="card--image" src= ${pantsObj[i].image} alt="bloomers image"/>`;
     domString += `<p><b>USD:</b> ${pantsObj[i].price}</p>`;
     domString += `<p><b>Material:</b> ${pantsObj[i].material}</p>`;
     domString += `<p> ${pantsObj[i].size}</p>`;
@@ -212,7 +212,7 @@ const adultCards = () => {
   for (let i = 0; i < pantsObj.length; i++) {
     if (pantsObj[i].age === 'Adult') {
       domString += `<div class="home-pants">`;
-      domString += `<img src= ${pantsObj[i].image} alt="bloomers image"/>`;
+      domString += `<img class="card--image" src= ${pantsObj[i].image} alt="bloomers image"/>`;
       domString += `<p><b>USD:</b> ${pantsObj[i].price}</p>`;
       domString += `<p><b>Material:</b> ${pantsObj[i].material}</p>`;
       domString += `<p> ${pantsObj[i].size}</p>`;
@@ -229,7 +229,7 @@ const teenCards = () => {
   for (let i = 0; i < pantsObj.length; i++) {
     if (pantsObj[i].age === 'Teen') {
       domString += `<div class="home-pants">`;
-      domString += `<img src= ${pantsObj[i].image} alt="bloomers image"/>`;
+      domString += `<img class="card--image" src= ${pantsObj[i].image} alt="bloomers image"/>`;
       domString += `<p><b>USD:</b> ${pantsObj[i].price}</p>`;
       domString += `<p><b>Material:</b> ${pantsObj[i].material}</p>`;
       domString += `<p> ${pantsObj[i].size}</p>`;
@@ -246,7 +246,7 @@ const kidCards = () => {
   for (let i = 0; i < pantsObj.length; i++) {
     if (pantsObj[i].age === 'Kid') {
       domString += `<div class="home-pants">`;
-      domString += `<img src= ${pantsObj[i].image} alt="bloomers image"/>`;
+      domString += `<img class="card--image" src= ${pantsObj[i].image} alt="bloomers image"/>`;
       domString += `<p><b>USD:</b> ${pantsObj[i].price}</p>`;
       domString += `<p><b>Material:</b> ${pantsObj[i].material}</p>`;
       domString += `<p> ${pantsObj[i].size}</p>`;
@@ -289,19 +289,6 @@ const homeInit = () => {
 
 homeInit();
 
-// $(document).ready(function () {
-//   $("#bloom").hide().fadeIn(7000);
-//   $("#bloom").click(function () {
-//     $("#bloom").fadeOut(500).fadeIn(7000);
-//   });
-// });
-
-// $(document).ready(function () {
-//   $("#bottomCards").hide();
-//   $("#bloom").click(function () {
-//     $("#bottomCards").slideDown(1000);
-//   });
-// });
 
 // ABOUT SCRIPTS
 const joePrintToDom = (divId, textToPrint) => {

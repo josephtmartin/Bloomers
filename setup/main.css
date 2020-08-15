@@ -53,7 +53,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-img {
+.card--image {
   width: 280px;
   height: 335px;
   padding: 10px;
@@ -103,6 +103,38 @@ img {
 }
 
 /* ABOUT US PAGE */
+.about--image {
+  height: auto;
+}
+.about--container .btn {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  width: 23%;
+  height: 15%;
+  font-size: 75px;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.about--card .info--container {
+  margin: 30px;
+}
+
+.about--card .info--container h2 {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  font-family: 'Rye', cursive;
+}
+.about--card .info--container p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
 
 /* CONTACT US PAGE */
 #contactUsPage {
@@ -200,6 +232,40 @@ fieldset {
 /* MOODS PAGE */
 
 /* SEASONS PAGE */
+
+/* FAQ PAGE */
+.faq--image-container,
+.faq--image {
+  display: flex;
+  justify-content: center;
+}
+.faq--results ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 20px;
+  max-width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+}
+.faq--results .question {
+    font-weight: bold;
+    font-size: 20px;
+}
+.faq--results .answer {
+    font-weight: 600;
+    font-size: 20px;
+}
+.faq--search {
+    display: flex;
+    justify-content: center;
+}
+.faq--container {
+    padding: 0;
+}
 
 /* FOOTER */
 .footer {
