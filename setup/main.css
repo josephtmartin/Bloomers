@@ -1,11 +1,11 @@
 /* UNIVERSAL STYLES */
 
 body {
-  background-color: aquamarine;
+  background-color: #fcf7f0;
 }
 /* NAVBAR */
 .navbar-brand {
-  font-family: 'Rye', cursive;
+  font-family: "Rye", cursive;
 }
 
 /* HOME PAGE */
@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   letter-spacing: 4.5px;
+  font-family: "Roboto", sans-serif;
 }
 
 .fabricIMG {
@@ -27,11 +28,13 @@ body {
 .lead {
   display: flex;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .home-buttons {
   display: flex;
   justify-content: space-around;
+  font-family: "Roboto", sans-serif;
 }
 
 .home-bloomers {
@@ -41,19 +44,62 @@ body {
 }
 
 .home-pants {
-    text-align: center;
-    border-radius: 12px;
-    width: 300px;
-    margin: 20px;
-    text-align: center;
-    background-image: url(/images/border.jpeg);
+  text-align: center;
+  border-radius: 12px;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  background-image: url(/images/border.jpeg);
+  font-family: "Roboto", sans-serif;
 }
 
 img {
   width: 280px;
   height: 335px;
   padding: 10px;
-  opacity: .98;
+}
+
+.bloom {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .fabricIMG {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .fabricIMG {
+    height: 275px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fabricIMG {
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .fabricIMG {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .fabricIMG {
+    height: 475px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .fabricIMG {
+    height: 575px;
+  }
 }
 
 /* ABOUT US PAGE */
@@ -66,5 +112,5 @@ img {
 
 /* FOOTER */
 .footer {
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
 }

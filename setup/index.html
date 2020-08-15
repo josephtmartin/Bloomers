@@ -9,11 +9,18 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Bloomers || Home</title>
   </head>
-  <body>
+  <body id="homePage">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Bloomers</a>
       <button
@@ -57,28 +64,29 @@
     </nav>
 
     <div class="jumbotron">
-      <img src="/images/fabric.jpeg" alt="fabric" class="fabricIMG">
+      <img src="/images/jumbo-image.jpg" alt="fabric" class="fabricIMG" />
       <h1 class="display-4">.Be Weird.</h1>
       <p class="lead">Life is too short to be normal</p>
-      
-      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+
+      <div class="bloom">
+        <a class="btn btn-outline-dark btn-lg" href="#" role="button" id="bloom"
+          >Bloom</a
+        >
+      </div>
     </div>
 
-    <!-- <h5>
-      Featured Products
-    </h5> -->
+    <div id="bottomCards">
+      <div class="home-buttons" id="home-buttons">
+        <button id="all" class="btn btn-outline-dark">All Bloomers</button>
+        <button id="adult" class="btn btn-outline-dark">Adult Bloomers</button>
+        <button id="teen" class="btn btn-outline-dark">Teen Bloomers</button>
+        <button id="kids" class="btn btn-outline-dark">Kids Bloomers</button>
+      </div>
 
-    <div class="home-buttons"  id="home-buttons">
-      <button id="all"  class="btn btn-outline-dark">All Bloomers</button>
-      <button id="adult" class="btn btn-outline-dark">Adult Bloomers</button>
-      <button id="teen" class="btn btn-outline-dark">Teen Bloomers</button>
-      <button id="kids" class="btn btn-outline-dark">Kids Bloomers</button>
-  </div>
-
-  <div class="home-cards">
-    <div class="home-bloomers" id="home-bloomers">Images of bloomers</div>
-</div>
-
+      <div class="home-cards">
+        <div class="home-bloomers" id="home-bloomers">Images of bloomers</div>
+      </div>
+    </div>
 
     <footer class="footer d-flex justify-content-center pt-2 sticky-bottom">
       <p>Copyright &copy 2020, All Rights Reserved</p>
@@ -98,6 +106,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
