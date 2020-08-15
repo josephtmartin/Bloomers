@@ -89,6 +89,18 @@ const seasonsObj = [{
   image: 'seasons-images/winter-4.jpg',
   season: ['Winter'],
 },
+{
+  image: 'seasons-images/winter-5.jpg',
+  season: ['Winter', 'Fall', 'Spring'],
+},
+{
+  image: 'seasons-images/summer-5.jpg',
+  season: ['Summer'],
+},
+{
+  image: 'seasons-images/summer-6.jpg',
+  season: ['Summer', 'Spring'],
+},
 ]
 // HOME SCRIPTS
 
