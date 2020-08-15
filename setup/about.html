@@ -9,14 +9,16 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
     <title>Bloomers || About</title>
   </head>
-  <body>
+  <body id="aboutPage">
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Bloomers</a>
       <button
@@ -30,18 +32,13 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="collapse navbar-collapse d-flex justify-content-end"
-        id="navbarNav"
-      >
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="about.html"
-              >About <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="moods.html">Moods</a>
@@ -52,11 +49,27 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <footer class="footer d-flex justify-content-center pt-2 fixed-bottom">
+    <!-- ABOUT -->
+    <div class="about--container">
+      <img
+        class="about--image w-100 h-a"
+        src="https://i.postimg.cc/Mp4xCHpd/group-photo-for-about-page.jpg"
+        alt="image of a group of people"
+      />
+      <button type="button" class="btn btn-light btn-lg" id="aboutUsBtn">About Us</button>
+    </div>
+
+    <div id="about" class="about--card"></div>
+
+    <!-- FOOTER -->
+    <footer class="footer d-flex justify-content-center pt-2 sticky-bottom">
       <p>Copyright &copy 2020, All Rights Reserved</p>
     </footer>
 
