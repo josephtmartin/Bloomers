@@ -406,12 +406,9 @@ const aboutInfoBuilder = (e) => {
 
   if (buttonId === 'aboutUsBtn') {
     domString += `<div class="info--container">
-                    <h2>What We Do</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <h2>Our Origin Story</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <h2>Looking to The Future of Fashion</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p>Bloomers was founded in 2014 by Iona Abernathy-Cooper and Jasper Abernathy. This sibling duo was inspired to start something new-but-old when they researched the life of their great-great-aunt Eleanore Abernathy. Ms. Abernathy was a prominent member of the women's suffrage movement and spent the remainder of her life championing equality for all people. Iona and Jasper wanted to honor their relative while inspiring a new generation to "bloom" and pursue their passions.</p>
+                      <p>After interning at Parisian fashion house Lanvin, Jasper returned to the U.S. and partnered with Iona to start Bloomers. A successful Kickstarter campaign allowed them to start operations in late 2014. Bloomers seeks to disrupt the norm by encouraging individuals to "Be Weird." Styles are available for adults, teens, and children.  Bloomers seeks sustainable sourcing with a commitment to zero-waste practices. Recognizing the need for innovation, Bloomers partners with local design schools to encourage up-and-coming talent while promoting partnerships to give back to the community.</p>
                   </div>`;
   }
   joePrintToDom('about', domString);
