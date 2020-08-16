@@ -229,7 +229,56 @@ fieldset {
 }
 
 /* MOODS PAGE */
+#moodJumbo {
+  background-color: #f8f9fa;
+  padding: 5% 0 5% 3%;
+  font-family: 'Rye';
+  justify-content: center;
+}
+    
+#moodPicker {
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  
+  }
+#randomBloom {
+  display: block;
+  width: 100%;
+  border: none;
+  margin: 5px;
+  background-color: #9c9fc9;
+  padding: 14px 28px;
+  font-size: 20px;
+  text-align: center;
+}
 
+#playItSafe {
+  display: block;
+  width: 100%;
+  border: none;
+  margin: 5px;
+  background-color: #aad6f0c2;
+  padding: 14px 28px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#moodyBloom {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 300px;
+}
+
+#moodCardImage {
+  height: 30%;
+  object-fit: cover;
+}
+
+.card-mood {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
 /* SEASONS PAGE */
 
 #seasonsPage {
