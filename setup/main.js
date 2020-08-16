@@ -509,7 +509,7 @@ const moodArray = [
   { 
     moodName: `Hipster of NYC`,
     description: `You are into upcycling and abhor all things "pedestrian." If you cannot cycle there, it's just not worth it. Our locally-sourced bloomers will take you from fifth wave coffee shops to the next search for mustache wax. Your color palette is a melange of avocado, teak, harvest gold, and burnt sienna. `,
-    imageURL: `https://i.pinimg.com/736x/56/b1/ce/56b1ce00ee1a1cec6d38ccdaccdf0175.jpg`
+    imageURL: `https://i.pinimg.com/736x/56/b1/ce/56b1ce00ee1a1cec6d38ccdaccdf0175.jpg` 
   },
   { 
     moodName: `Quarantine Vibe`,
@@ -531,12 +531,13 @@ const moodArray = [
     description: `Forget "puffy shirts!" Swash and/or buckle your way through life with our pirate-inspired bloomers. You'll shiver your timbers in a variety of solids and stripes. The breezy style of our bloomers will let the sea air cool your sunburnt skin. Also available for lil' buccanners as well. Your color palette is ruby, sea-green, barnacle, and squid ink.`,
     imageURL: `https://www.medievalcollectibles.com/wp-content/uploads/2019/03/MY100097_5.jpg`
   },
+  
 ]
-const printAll = () => {
+const printAllMoods = () => {
   let domString = '';
   for (let i=0; i < moodArray.length; i++) {
     domString += `<div class="mood--card" style="width: 18rem;" id="${i}">  
-                   <img src=${moodArray[i].imageURL} class="mood--image" 
+                   <img src=${moodArray[i].imageURL} class="card-img-top" id="moodCardImage" 
                    alt="This is an image of ${moodArray[i].moodName}">
                   <div class="card-body">
                   <p class="card-mood">${moodArray[i].moodName}</p>
@@ -545,14 +546,14 @@ const printAll = () => {
                   </div>`
  }   
  
- printToDom('#moodyBloom', domString)
+ printToDom('#moodyBloom', domString);
 }
 
 const randomMoodGenerator = () => {
   let domString = '';
     const randomMood = moodArray[Math.floor(Math.random()* moodArray.length)];
         domString += `<div class="mood--card" style="width: 18rem;" id=${moodyBloom}>  
-                  <img src=${randomMood.imageURL} class="mood--image" 
+                  <img src=${randomMood.imageURL} class="card-img-top" id="moodCardImage" 
                   alt="This is an image of ${randomMood.imageURL}">
                  <div class="card-body">
                  <p class="card-mood">${randomMood.moodName}</p>
@@ -560,7 +561,7 @@ const randomMoodGenerator = () => {
                  </div>
                  </div>`
  
-printToDom('#moodyBloom', domString)
+printToDom('#moodyBloom', domString);
 
 }
 
@@ -568,7 +569,7 @@ printToDom('#moodyBloom', domString)
 const moodyEvents = () => {
  if (document.querySelector('#moodsPage')) {
     document.querySelector('#randomBloom').addEventListener('click', randomMoodGenerator);
-    document.querySelector('#playItSafe').addEventListener('click', printAll);
+    document.querySelector('#playItSafe').addEventListener('click', printAllMoods);
 }}
 
 
