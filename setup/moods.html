@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="main.css" />
     <title>Bloomers || Moods</title>
   </head>
-  <body>
+  <body id="moodsPage">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Bloomers</a>
       <button
@@ -44,15 +44,40 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
         </ul>
       </div>
     </nav>
+    <div class="jumbotron jumbotron-fluid" id="moodJumbo">
+      <div class="mood-jumbo-container">
+        <h2 class="display-4">What's Your Bloomer Mood?</h2>
+        <div class="pickAMood" id="moodPicker">
+          <p>Unsure what kind of statement you want to make with your bloomers? Try our Bloomer Mood Finder. Not feeling spontaneous? Preview all our available moods and select your fave. Discover fashion inspiration that will take you from day to night. Whether microbreweries, larping, or endless days of quarantine are on your horizon, Bloomers has you covered.</p>
+       </div>
+       <div class= "kilts" id="kiltScots">
+        <img src="https://i.pinimg.com/originals/40/06/5e/40065e298e8d6642855203f579a978aa.jpg" alt="Image of men in kilts wearing bloomers underneath"> 
+      </div>
+      </div>
+    </div>
+    
+  
+   <div id="moodButtons">
+    <button type="button" class="btn btn-primary " id="randomBloom">Find Bloomer Mood</button>
+    <button type="button" class="btn btn-secondary " id="playItSafe">Play It Safe</button>
+   </div>  
+
+   <div id="moodyBloom" class="d-flex flex-wrap justify-content-between"></div>
+   
+   
+   
 
     <footer class="footer d-flex justify-content-center pt-2 fixed-bottom">
       <p>Copyright &copy 2020, All Rights Reserved</p>
     </footer>
-
-    <script
+    
+       <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
