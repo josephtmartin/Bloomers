@@ -5,6 +5,12 @@ This website was built as a group project during our time at Nashville Software 
 
 ![Bloomers Demo](demo/bloomers.gif)
 
+## Build Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2d78b1f9-1e27-426b-bcba-7f5f11f15808/deploy-status)](https://app.netlify.com/sites/bloomers-group-project/deploys)
+
+##Site Link
+[Bloomers Product Site](https://bloomers-group-project.netlify.app/)
+
 ### Technologies Used
 * HTML
 * CSS
